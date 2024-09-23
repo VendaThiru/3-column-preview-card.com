@@ -1,0 +1,108 @@
+:root{
+--Bright--orange: hsl(31, 77%, 52%);
+--Dark--cyan: hsl(184, 100%, 22%);
+--Very--dark--cyan: hsl(179, 100%, 13%);
+--Transparent--white: hsla(0, 0%, 100%, 0.75);
+--Very--light--gray: hsl(0, 0%, 95%);
+}
+#card{
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 25px auto;
+    float: center;
+}
+#first{
+    background-color: var(--Bright--orange);
+}
+#second{
+    background-color: var(--Dark--cyan);
+}
+#third{
+    background-color: var(--Very--dark--cyan);
+}
+h1{
+    font-size: 2em;
+    color: white;
+    font-weight: 900;
+}
+p{
+    font-size: 1.2em;
+    color: var(--Transparent--white);   
+}
+button{
+    height: 50px;
+    width: 150px;
+    border: 5px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#first button{
+    color: var(--Bright--orange);
+}
+#second button{
+    color: var(--Dark--cyan);
+}
+#third button{
+    color: var(--Very--dark--cyan);
+}
+button:hover{
+    border: 3px solid white;
+    color: white;
+}
+#first button:hover{
+    color: white;
+    background-color: var(--Bright--orange);
+}
+#second button:hover{
+    color: white;
+    background-color: var(--Dark--cyan);
+}
+#third button:hover{
+    color: white;
+    background-color: var(--Very--dark--cyan);
+}
+.container{
+    padding: 25px;
+    margin: 15px;
+}
+
+/* Media Query */
+@media (max-width:756px) {
+
+    #card{
+        width: 500px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 25px auto;
+    }
+    p {
+        height: 60px;
+        width: 350px;
+    }
+}
+@media (max-width:468px) {
+
+    #card{
+        width: 350px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 25px auto;
+    }
+    p {
+        height: 50px;
+        width: 300px;
+    }
+    button {
+        margin-top: 15%;
+        height: 50px;
+        width: 100px;
+        }
+
+}
